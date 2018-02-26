@@ -1,0 +1,1 @@
+exports.chunk2 = 2;

@@ -1,0 +1,17 @@
+/**
+*
+* {{ properCase name }}
+*
+*/
+
+const webpack = require("webpack");
+const path = require("path");
+module.exports = {
+	entry:{
+		main: path.resolve(__dirname,"./examples/{{properCase name}}/index.js"),
+	},
+	output: {
+		path: path.resolve(__dirname,"./examples/{{properCase name}}/dist"),
+		filename: '[name].bundle.js',
+	},
+}
