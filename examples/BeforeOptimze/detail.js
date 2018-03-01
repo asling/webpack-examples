@@ -12,6 +12,7 @@ var $  = require("jquery");
 $.get("localhost:8989",function(json){
 	console.log(json);
 });
+
 module.exports = function(){
 	return 'this is a detail file';
 }
