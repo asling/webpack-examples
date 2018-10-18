@@ -1,1 +1,1 @@
-{"name":"beta_7000187b24c0cfeffc53","content":{"./beta.js":{"id":4,"meta":{}},"./b.js":{"id":5,"meta":{}},"./c.jsx":{"id":6,"meta":{}}}}
+{"name":"beta_7000187b24c0cfeffc53","content":{"./examples/Dll/beta.js":{"id":4,"buildMeta":{"providedExports":true}},"./examples/Dll/b.js":{"id":5,"buildMeta":{"providedExports":true}},"./examples/Dll/c.jsx":{"id":6,"buildMeta":{"providedExports":true}}}}

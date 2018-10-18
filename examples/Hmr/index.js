@@ -5,8 +5,9 @@
 */
 
 const _ = require("lodash");
-const printMe = require("./print.js");
-
+// const printMe = require("./print.js");
+import printMe from './print.js';
+import a from './a.js';
 function component() {
     var element = document.createElement('div');
     var btn = document.createElement('button');
@@ -21,11 +22,26 @@ function component() {
     return element;
 }
 
-document.body.appendChild(component());
+a();
 
+
+let element = component();
+document.body.appendChild(element);
 if(module.hot){
-	module.hot.accept("./print.js",function(){
+	module.hot.accept("./print.js",function(){   //覆盖特定文件的hot reload
 		console.log('Accepting the updated printMe module!');
-		printMe();
+
+		// printMe();
+        document.body.removeChild(element);
+        element = component();
+        document.body.appendChild(element);
 	});
+    module.hot.accept("./a.js",function(){   //覆盖特定文件的hot reload
+        console.log('Accepting the updated a module!');
+
+        // printMe();
+        // document.body.removeChild(element);
+        // element = component();
+        // document.body.appendChild(element);
+    });
 }

@@ -27,7 +27,7 @@ module.exports = {
 		},
 		{
 			type: 'add',
-			path: path.resolve(__dirname,'../../webpack.config.{{properCase name}}.js'),
+			path: `../${container}/{{properCase name}}/webpack.config.js`,
 			templateFile: path.resolve(__dirname,'./webpack.config.js.hds'),
 			abortOnFail: true,
 		}

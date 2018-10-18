@@ -9,6 +9,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin'); 
 const root = path.resolve(__dirname,"./examples/Hmr/");
 module.exports = {
+	mode: 'development',
 	entry:{
 		// main: path.resolve(root,"./index.js"),
 		main: "./examples/Hmr/index.js",
